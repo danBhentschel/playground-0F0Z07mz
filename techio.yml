@@ -1,0 +1,28 @@
+title : Linux Filesystems 102 - Partitions
+plan:
+  - title: "About this Course"
+    description: "An introduction to the course"
+    plan:
+    - title: "Welcome"
+      statement: markdowns/01_intro/01_welcome.md
+    - title: "About Partitions"
+      statement: markdowns/01_intro/02_about.md
+    - title: "Using the VM"
+      statement: markdowns/01_intro/03_vm.md
+  - title: "Disk Partitions"
+    description: "Course content"
+    plan:
+    - title: "Discovering partitions"
+      statement: markdowns/02_lesson/01_discovering.md
+  - title: "Final Words"
+    description: "Review and further study"
+    plan:
+    - title: "Review"
+      statement: markdowns/03_end/01_review.md
+    - title: "What next"
+      statement: markdowns/03_end/02_next.md
+
+projects:
+  webconsole:
+    root: work
+    runner: danbhentschel/techio-qemu:1.5
