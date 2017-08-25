@@ -1,6 +1,6 @@
 # techio-linux-fs-102-partitions
 A lesson on Linux block devices, for the tech.io learning platform. It is hosted at
-[Linux Filesystems 102 - Partitions]().
+[Linux Filesystems 102 - Partitions](https://tech.io/my-playgrounds/3823).
 
 # Details on the VMs
 The VMs utilize the [techio-qemu](https://hub.docker.com/r/danbhentschel/techio-qemu/) Docker image. This image is engineered to
