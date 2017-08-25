@@ -1,4 +1,4 @@
-# techio-linux-fs-01-blockdevice
+# techio-linux-fs-102-partitions
 A lesson on Linux block devices, for the tech.io learning platform. It is hosted at
 [Linux Filesystems 102 - Partitions]().
 
