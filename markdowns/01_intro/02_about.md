@@ -16,4 +16,5 @@ A partition:
 
 # Partitioning schemes
 There are [a number of partitioning schemes](https://unix.stackexchange.com/q/289389) in existence, but the vast majority of them
-are so archaic as to be only a curiosity today. In general practice you will only need to know about two partitioning schemes: MBR and GPT.
+are so archaic as to be only a curiosity today. In general practice you will only need to know about two partitioning schemes:
+[MBR](https://en.wikipedia.org/wiki/Master_boot_record) and [GPT](https://en.wikipedia.org/wiki/GUID_Partition_Table).
