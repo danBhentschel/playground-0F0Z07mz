@@ -7,8 +7,10 @@ plan:
       statement: markdowns/01_intro/01_welcome.md
     - title: "About Partitions"
       statement: markdowns/01_intro/02_about.md
+    - title: "MBR and GPT"
+      statement: markdowns/01_intro/03_mbr_gpt.md
     - title: "Using the VM"
-      statement: markdowns/01_intro/03_vm.md
+      statement: markdowns/01_intro/04_vm.md
   - title: "Disk Partitions"
     description: "Course content"
     plan:
