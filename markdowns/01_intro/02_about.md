@@ -1,12 +1,19 @@
 # What is a disk partition?
-A partition is a part of a block device. Partitioning is a means of segmenting a **physical** device into multiple smaller
-**logical** devices. If you think in terms of architecture, a partition is a temporary wall used to separate a large open space
-into smaller individual spaces, such as cubicles.
+A partition is a portion of a block device. If you think in terms of architecture, a partition is a temporary wall used to
+separate parts of a large room into smaller pseudo-rooms, such as cubicles.
 
 ![Image of cubicles](cubicle.jpg "A cubicle")
 
+Partitions in block devices are similar in that they take a large, (usually) **physical** block device and segment it into multiple
+smaller, **logical** block devices. Each logical block device is called a partition.
 
-## MBR partitioning scheme
+# Characteristics of a partition
+A partition:
 
+ * Is a portion of a single larger block device
+ * Is comprised of contiguous data blocks
+ * Cannot be trivially moved or resized
 
-## GPT partitioning scheme
+# Partitioning schemes
+There are [a number of partitioning schemes](https://unix.stackexchange.com/q/289389) in existence, but the vast majority of them
+are so archaic as to be only a curiosity today. In general practice you will only need to know about two partitioning schemes: MBR and GPT.
