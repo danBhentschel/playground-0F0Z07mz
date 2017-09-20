@@ -15,5 +15,8 @@ w
 y" | fdisk /dev/sdb
     partprobe /dev/sdb
     mkfs.ext4 /dev/sdb2
-    mount /dev/sdb2 /pool
+echo "
+/dev/sdb2 /pool ext4 defaults 0 0
+"| sudo tee -a /etc/fstab >/dev/null
+    mount -a
 fi
