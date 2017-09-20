@@ -9,8 +9,8 @@ dd if=/dev/zero of=$img_name bs=1M count=3
 
 losetup loop7 ${img_name}
 
-echo "n
-p
+echo "g
+n
 1
 
 
