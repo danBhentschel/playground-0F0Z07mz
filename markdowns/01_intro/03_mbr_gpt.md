@@ -16,7 +16,7 @@ above. This newer scheme:
  * Supports block devices up to 8 ZiB in size (very, very big)
  * Supports at least 128 partitions per device
  * Supports variable sized bootstrap code
- * Dictates two copies of the partition table
+ * Requires that two copies of the partition table must exist
  * Requires a CRC on both the GPT header and the table entries
 
 Given all of these improvements, it seems logical that MBR should have disappeared long ago. Unfortunately, it's
