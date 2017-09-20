@@ -14,6 +14,14 @@ n
 1
 
 
+x
+i
+9182E338-EFBB-4E07-AA5B-27FC8BF35B24
+u
+FB06BAFA-A35C-48D5-B37B-AAEE235D1C7E
+n
+Scripts
+r
 w
 "|fdisk /dev/loop7
 

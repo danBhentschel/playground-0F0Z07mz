@@ -15,6 +15,7 @@ mk_image() {
     cp welcome.sh tmp
     cp assistant_commands.sh tmp
     cp cmd_list_${1}* tmp
+    cp init_pool.sh tmp
     cp lesson${1}.sh tmp/lesson.sh
     if compgen -G "lesson${1}_*.sh" > /dev/null; then
         cp lesson${1}_*.sh tmp
