@@ -25,3 +25,4 @@ mk_image() {
 }
 
 mk_image 1
+mk_image 2
