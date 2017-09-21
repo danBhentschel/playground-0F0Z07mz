@@ -1,11 +1,10 @@
 #!/bin/bash
 
-BLUE='\033[1;34m'
-YELLOW='\e[38;5;220m'
-DKYELLOW='\033[0;33m'
+BLUE='\e[38;5;99m'
+YELLOW='\e[38;5;136m'
 GRAY='\033[1;30m'
 COLOR=$YELLOW
-CMDCOLOR=$DKYELLOW
+CMDCOLOR='\e[38;5;243m'
 NOCOLOR='\033[0m'
 
 colorecho ()
