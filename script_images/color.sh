@@ -1,7 +1,7 @@
 #!/bin/bash
 
 BLUE='\033[1;34m'
-YELLOW='\033[1;33m'
+YELLOW='\e[38;5;220m'
 DKYELLOW='\033[0;33m'
 GRAY='\033[1;30m'
 COLOR=$YELLOW
