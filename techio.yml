@@ -1,6 +1,6 @@
 title : Linux Filesystems 102 - Partitions
 plan:
-  - title: "About this Course"
+  - title: "About This Course"
     description: "An introduction to the course"
     plan:
     - title: "Welcome"
@@ -14,14 +14,16 @@ plan:
   - title: "Disk Partitions"
     description: "Course content"
     plan:
-    - title: "Discovering partitions"
+    - title: "Discovering Partitions"
       statement: markdowns/02_lesson/01_discovering.md
+    - title: "Working With Loop Devices"
+      statement: markdowns/02_lesson/02_loop.md
   - title: "Final Words"
     description: "Review and further study"
     plan:
     - title: "Review"
       statement: markdowns/03_end/01_review.md
-    - title: "What next"
+    - title: "What Next"
       statement: markdowns/03_end/02_next.md
 
 projects:
