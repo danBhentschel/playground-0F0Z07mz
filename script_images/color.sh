@@ -4,7 +4,7 @@ BLUE='\e[38;5;110m'
 YELLOW='\e[38;5;136m'
 GRAY='\033[1;30m'
 COLOR=$YELLOW
-CMDCOLOR='\e[38;5;243m'
+CMDCOLOR='\e[38;5;246m'
 NOCOLOR='\033[0m'
 
 colorecho ()
