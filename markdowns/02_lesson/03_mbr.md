@@ -26,5 +26,5 @@ sudo fdisk /dev/loop0
 Notice the message fdisk gives you:
 
 ```
-
+The size of this disk is 3 TiB (3298534883328 bytes). DOS partition table format can not be used on drives for volumes larger than 2199023255040 bytes for 512-byte sectors. Use GUID partition table format (GPT).
 ```
