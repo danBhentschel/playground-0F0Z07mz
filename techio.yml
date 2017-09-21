@@ -18,6 +18,8 @@ plan:
       statement: markdowns/02_lesson/01_discovering.md
     - title: "Working With Loop Devices"
       statement: markdowns/02_lesson/02_loop.md
+    - title: "MBR Partitions"
+      statement: markdowns/02_lesson/03_mbr.md
   - title: "Final Words"
     description: "Review and further study"
     plan:

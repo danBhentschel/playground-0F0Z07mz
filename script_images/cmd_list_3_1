@@ -1,0 +1,6 @@
+Command[0]="truncate -s 3T /pool/disk1"
+Comment[0]="Sparse file created. Now create the loop device."
+Command[1]="sudo losetup loop0 /pool/disk1"
+Comment[1]="Created a new block device called /dev/loop0"
+Command[2]="sudo fdisk /dev/loop0"
+Comment[2]="..."
