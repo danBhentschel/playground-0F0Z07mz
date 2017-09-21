@@ -51,3 +51,17 @@ ata-Hitachi_HUA723030ALA640_MK0371YHH0S4WA
 ata-ADATA_SP550_2G0420003056
 ata-Samsung_SSD_850_EVO_250GB_S21NNSAG841280B
 ```
+
+These example identifiers include the manufacturer (the first one is Seagate Technology) the model number, and the serial number.
+
+Next, try the command...
+
+```
+sudo fdisk -l
+```
+
+> **TIP:** Remember from the 101 course that `sudo` is required to escalate privleges for commands that need to directly access the block devices.
+
+The output of `fdisk -l` shows all block devices and their associated partition tables. Notice that it's separated into two sections, one for `/dev/sda: 1.4 GiB` and one for `/dev/sdb: 100 MiB`. You can see that `sda` has a reported "Disklable type" of `dos` (MBR) and `sdb` reports `gpt`. Also, `sda` shows a single partition of size `1.4G`, and `sdb` shows two partions of sizes `3M` and `97M`.
+
+
