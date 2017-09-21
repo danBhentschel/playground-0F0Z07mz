@@ -7,17 +7,14 @@ if [ -e /home/techio/.assistant_away ]; then
 fi
 
 if [ "$1" == "back" ]; then
-    tput setaf 3
     echo
     echo *************
     echo Welcome back!
     echo *************
     echo
-    colorecho " ==> Next command: $2 <=="
+    cmdecho "$2"
     echo
-    tput sgr0
 else
-    tput setaf 3
     echo
     echo *****************************************
     echo Welcome to $1
@@ -28,9 +25,8 @@ else
     echo
     colorecho " ==> Hello from the lesson assistant <=="
     echo
-    echo Type "go_away" to get rid of the assistant. Or type "do_it" to automatically
-    echo execute the next command.
+    echo Type ${GRAY}go_away${NOCOLOR} to get rid of the assistant. Or type ${GRAY}do_it${NOCOLOR} to
+    echo automatically execute the next command.
     echo
-    colorecho " ==> Next command: $2 <=="
-    tput sgr0
+    cmdecho "$2"
 fi

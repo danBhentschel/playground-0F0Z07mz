@@ -36,7 +36,7 @@ while [ $count -lt ${#Command[@]} ]; do
                 fi
                 count=$(( $count + 1 ))
                 if [ $count -lt ${#Command[@]} ]; then
-                    colorecho " ==> Next command: ${Command[$count]} <=="
+                    cmdecho "${Command[$count]}"
                 else
                     colorecho " ==> You have reached the end of this lesson <=="
                 fi

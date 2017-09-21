@@ -92,4 +92,4 @@ And let's do one final check...
 lsblk -f
 ```
 
-Look at that! Your `/pool/disk` file is now mounted on `/mnt` using the loopback device, `loop0`.
+Look at that! Your `/pool/disk1` file is now mounted on `/mnt` using the loopback device, `loop0`.
