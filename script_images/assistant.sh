@@ -28,19 +28,13 @@ while [ $count -lt ${#Command[@]} ]; do
             if [ "$hist_cmd" == "${Command[$count]}" ]; then
                 echo
                 if [ -n "${Comment[$count]}" ]; then
-                    tput setaf 3
                     colorecho " ==> ${Comment[$count]} <=="
-                    tput sgr0
                 fi
                 count=$(( $count + 1 ))
                 if [ $count -lt ${#Command[@]} ]; then
-                    tput setaf 3
                     colorecho " ==> Next command: ${Command[$count]} <=="
-                    tput sgr0
                 else
-                    tput setaf 3
                     colorecho " ==> You have reached the end of this lesson <=="
-                    tput sgr0
                 fi
                 /scripts/ttyecho -n /dev/ttyS0 ""
             fi
