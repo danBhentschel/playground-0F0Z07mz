@@ -5,6 +5,7 @@ if [ -e /home/techio/.assistant_away ]; then
 fi
 
 if [ "$1" == "back" ]; then
+    tput setaf 3
     echo
     echo *************
     echo Welcome back!
@@ -12,7 +13,9 @@ if [ "$1" == "back" ]; then
     echo
     echo " ==> Next command: $2 <=="
     echo
+    tput sgr0
 else
+    tput setaf 3
     echo
     echo *****************************************
     echo Welcome to $1
@@ -26,4 +29,5 @@ else
     echo Type "go_away" to get rid of the assistant.
     echo
     echo " ==> Next command: $2 <=="
+    tput sgr0
 fi

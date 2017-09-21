@@ -16,6 +16,6 @@ fi
 echo You might want to take some time now
 echo to read over the instructions below
 echo and to resize the terminal window
-echo echo
+echo
 
 /start_vm.sh

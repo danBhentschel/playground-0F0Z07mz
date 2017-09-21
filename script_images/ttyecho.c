@@ -9,15 +9,6 @@
 #include <string.h>
 #include <unistd.h>
 
-#define KNRM  "\x1B[0m"
-#define KRED  "\x1B[31m"
-#define KGRN  "\x1B[32m"
-#define KYEL  "\x1B[33m"
-#define KBLU  "\x1B[34m"
-#define KMAG  "\x1B[35m"
-#define KCYN  "\x1B[36m"
-#define KWHT  "\x1B[37m"
-
 void print_help(char *prog_name) {
     printf("Usage: %s [-n] DEVNAME COMMAND\n", prog_name);
     printf("Usage: '-n' is an optional argument if you want to push a new line at the end of the text\n");
@@ -47,16 +38,14 @@ int main (int argc, char *argv[]) {
     }
     mem_len = 0;
     for ( i = commandno; i < argc; i++ ) {
-        mem_len += strlen(argv[i]) + strlen(KYEL) + strlen(KNRM) + 2;
+        mem_len += strlen(argv[i]) + 2;
         if ( i > commandno ) {
             cmd = (char *)realloc((void *)cmd, mem_len);
         } else { //i == commandno
             cmd = (char *)malloc(mem_len);
         }
 
-        strcat(cmd, KYEL);
         strcat(cmd, argv[i]);
-        strcat(cmd, KNRM);
         // strcat(cmd, " ");
     }
   if (newline == 0)
