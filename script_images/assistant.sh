@@ -1,5 +1,6 @@
 #!/bin/bash
 
+source /scripts/color.sh
 source $1
 
 trim() {
@@ -28,17 +29,17 @@ while [ $count -lt ${#Command[@]} ]; do
                 echo
                 if [ -n "${Comment[$count]}" ]; then
                     tput setaf 3
-                    echo " ==> ${Comment[$count]} <=="
+                    colorecho " ==> ${Comment[$count]} <=="
                     tput sgr0
                 fi
                 count=$(( $count + 1 ))
                 if [ $count -lt ${#Command[@]} ]; then
                     tput setaf 3
-                    echo " ==> Next command: ${Command[$count]} <=="
+                    colorecho " ==> Next command: ${Command[$count]} <=="
                     tput sgr0
                 else
                     tput setaf 3
-                    echo " ==> You have reached the end of this lesson <=="
+                    colorecho " ==> You have reached the end of this lesson <=="
                     tput sgr0
                 fi
                 /scripts/ttyecho -n /dev/ttyS0 ""
