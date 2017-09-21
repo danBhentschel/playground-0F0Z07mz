@@ -23,7 +23,9 @@ while [ $count -lt ${#Command[@]} ]; do
     if [ "$last_cmd" != "$hist_cmd" ]; then
         last_cmd="$hist_cmd"
         if [ "$hist_cmd" == "do_it" ]; then
+            echo -e ${COLOR}
             /scripts/ttyecho -n /dev/ttyS0 "${Command[$count]}"
+            echo -e ${NOCOLOR}
         else
             if [ "$hist_cmd" == "${Command[$count]}" ]; then
                 echo

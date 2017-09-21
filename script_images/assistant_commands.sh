@@ -1,9 +1,10 @@
 alias go_away='
+source /scripts/color.sh
 set +m
 killall assistant.sh
 set -m
 touch /home/techio/.assistant_away
-echo " ==> Bye! <=="'
+colorecho " ==> Bye! <=="'
 
 alias do_it=''
 
