@@ -25,6 +25,7 @@ while [ $count -lt ${#Command[@]} ]; do
         if [ "$hist_cmd" == "do_it" ]; then
             echo -ne ${COLOR}
             /scripts/ttyecho /dev/ttyS0 "${Command[$count]}"
+            sleep 0.5
             echo -ne ${NOCOLOR}
             /scripts/ttyecho -n /dev/ttyS0 ""
         else
