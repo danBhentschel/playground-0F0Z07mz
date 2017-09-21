@@ -64,4 +64,10 @@ sudo fdisk -l
 
 The output of `fdisk -l` shows all block devices and their associated partition tables. Notice that it's separated into two sections, one for `/dev/sda: 1.4 GiB` and one for `/dev/sdb: 100 MiB`. You can see that `sda` has a reported "Disklable type" of `dos` (MBR) and `sdb` reports `gpt`. Also, `sda` shows a single partition of size `1.4G`, and `sdb` shows two partions of sizes `3M` and `97M`.
 
+The final command we're going to try is...
 
+```
+sudo parted -l
+```
+
+The output from `parted` is very similar to that of `fdisk`. You will see much of the same information, with a few differences. Notice that for both commands, the partition table for the MBR disk has different columns from the GPT table. This is because the two technologies use somewhat different metadata for partitions. 
