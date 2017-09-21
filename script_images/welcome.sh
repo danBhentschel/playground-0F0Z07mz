@@ -28,7 +28,8 @@ else
     echo
     colorecho " ==> Hello from the lesson assistant <=="
     echo
-    echo Type "go_away" to get rid of the assistant.
+    echo Type "go_away" to get rid of the assistant. Or type "do_it" to automatically
+    echo execute the next command.
     echo
     colorecho " ==> Next command: $2 <=="
     tput sgr0
