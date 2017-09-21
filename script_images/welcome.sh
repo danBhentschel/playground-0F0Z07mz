@@ -25,7 +25,7 @@ else
     echo
     colorecho " ==> Hello from the lesson assistant <=="
     echo
-    echo Type ${GRAY}go_away${NOCOLOR} to get rid of the assistant. Or type ${GRAY}do_it${NOCOLOR} to
+    echo -e Type ${GRAY}go_away${NOCOLOR} to get rid of the assistant. Or type ${GRAY}do_it${NOCOLOR} to
     echo automatically execute the next command.
     echo
     cmdecho "$2"
