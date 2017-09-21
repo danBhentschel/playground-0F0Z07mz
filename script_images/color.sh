@@ -1,5 +1,6 @@
 #!/bin/bash
 
+BLUE='\033[1;34m'
 YELLOW='\033[1;33m'
 DKYELLOW='\033[0;33m'
 GRAY='\033[1;30m'
