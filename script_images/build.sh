@@ -13,6 +13,7 @@ mk_image() {
     gcc ttyecho.c -o tmp/ttyecho
     cp assistant.sh tmp
     cp welcome.sh tmp
+    cp color.sh tmp
     cp assistant_commands.sh tmp
     cp cmd_list_${1}* tmp
     cp init_pool.sh tmp
