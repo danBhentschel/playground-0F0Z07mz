@@ -1,6 +1,6 @@
 #!/bin/bash
 
-YELLOW='\033[1;33m'
+YELLOW='\e[38;5;221m'
 NOCOLOR='\033[0m'
 
 echo
