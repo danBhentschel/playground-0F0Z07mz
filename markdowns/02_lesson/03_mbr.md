@@ -114,17 +114,21 @@ partition now using the `n` command...
 Look at this partition with the `p` command. Notice that it is automatically given a partition type of `5`, Extended. You can manually change 
 this type to something else with the `t` command, but then `fdisk` won't allow you to create logical partitions in it.
 
+## Logical
+
 Now create a logical partition, again with the `n` command:
 
  - Partition type: `l`
- - Partiton number: **Enter**
  - First sector: **Enter**
  - Last sector: **Enter**
+
+> **NOTE:** You can't assign partition numbers for logical patitions. They are automatically assigned.
 
 ## Partition limitations
 
 Play around a bit with the limitations of MBR partitions. Can you create a logical partition in something other than an extended partition?
-Can you create more than 1 extended partition? How about more than 4 primary partitions?
+Can you create more than 1 extended partition? How about more than 4 primary partitions? Can you create a logical partition that is bigger
+than the extended partition? What happens to partition numbers when you delete logical partitions?
 
 ## Seeing the results
 
