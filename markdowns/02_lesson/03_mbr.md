@@ -3,7 +3,9 @@
 This lesson will focus on creating MBR partitions, and some of the limitations in the MBR
 partitioning scheme.
 
-> **TIP:** <a href="https://tech.io/playgrounds/460370c032058ec25ad94748542e11273283/linux-filesystems-102---partitions/mbr-partitions" target="_top">open a new window</a>
+> **TIP:** You might want to
+<a href="https://tech.io/playgrounds/460370c032058ec25ad94748542e11273283/linux-filesystems-102---partitions/mbr-partitions" target="_top">open a new window</a>
+to this lesson so that you can view the terminal window and the instructions side-by-side.
 
 @[Start the VM]({"command":"/bin/bash -c '/project/target/lesson.sh 3'"})
 
