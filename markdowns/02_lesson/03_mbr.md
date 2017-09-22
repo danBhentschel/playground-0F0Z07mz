@@ -3,6 +3,8 @@
 This lesson will focus on creating MBR partitions, and some of the limitations in the MBR
 partitioning scheme.
 
+> **TIP:**
+
 @[Start the VM]({"command":"/bin/bash -c '/project/target/lesson.sh 3'"})
 
 ## Setup loop device
