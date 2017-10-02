@@ -5,7 +5,7 @@ partitioning scheme.
 
 > **TIP:** You might want to
 <a href="https://tech.io/playgrounds/460370c032058ec25ad94748542e11273283/linux-filesystems-102---partitions/mbr-partitions" target="_blank">open a new window</a>
-to this lesson so that you can view the terminal window and the instructions side-by-side.
+to this page so that you can view the terminal and the instructions side-by-side.
 
 @[Start the VM]({"command":"/bin/bash -c '/project/target/lesson.sh 3'"})
 
@@ -20,7 +20,7 @@ sudo losetup loop0 /pool/disk1
 
 > **TIP:** The `truncate` command creates what is called a [sparse file](https://en.wikipedia.org/wiki/Sparse_file). This doesn't
 actually allocate the required disk space until it is used. In this way, you can create files that (claim they) are larger than
-the medium they are stored on. This is why we can create a 3 TiB file on a partition that is under 100 MiB in size.
+the medium they are stored on. This is why we can create a 3 TiB file on a filesystem that is under 100 MiB in size.
 
 Remember that MBR does not support drives larger than 2 TiB. Let's see what happens when we try to create MBR partitions on
 this device...
@@ -44,7 +44,7 @@ Created a new DOS disklabel with disk identifier 0x<ID_HERE>.
 ```
 
 > **TIP:** The changes you make in `fdisk` do not affect the disk at all until you issue the `w` (**write**) command. Until written, all changes occur
-only in memory. You can create and delete partitions all you want and as long as you don't write those changes to the disk, they will not affect the
+only in memory. You can create and delete partitions all you want and, as long as you don't write those changes to the disk, they will not affect the
 system in any way.
 
 ## Creating partitions
@@ -84,11 +84,11 @@ This is because 2 TiB + 500 GiB would go over the 2 TiB limit imposed by the MBR
 Type `t` to change the **type** of a partition. You will be prompted for the partition number to change, and then for a type code. You can type `L` at this
 prompt to get a list of all possible partition types. There are 100 options listed. For Linux systems, the most commonly used are:
 
- - 5 - Extended
- - 82 - Linux swap
- - 83 - Linux
- - 8e - Linux LVM
- - fd - Linux raid
+ - `5` - Extended
+ - `82` - Linux swap
+ - `83` - Linux
+ - `8e` - Linux LVM
+ - `fd` - Linux raid
 
 Historically, the partition type was much more important than it is today. Modern Linux distributions are smart enough to figure out the contents of a partition
 without this type flag, but they can still be used by the code as a hint to indicate a starting place for content detection.
