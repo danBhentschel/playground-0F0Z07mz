@@ -22,6 +22,6 @@ above. This newer scheme:
 Given all of these improvements, it seems logical that MBR should have disappeared long ago. Unfortunately, it's
 still around, for two major reasons:
 
- 1. Windows OSs will only boot from MBR disks when running on machines that use BIOS (as opposed to UEFI) firmware
- 2. The standard installed partitioning tool on most Linux distributions (fdisk) creates MBR partitions by default
+ 1. Windows OSs will not boot from GPT disks when running on machines that use BIOS (as opposed to UEFI) firmware
+ 2. The standard partitioning tool on most Linux distributions (fdisk) creates MBR partitions by default
 
