@@ -114,7 +114,7 @@ partition name?
 
 ## Deleting a partition
 
-Tye `d` to **delete** a partition. You will be prompted for the number of the partition to delete. After deleting a partition, use the `p` command to
+Type `d` to **delete** a partition. You will be prompted for the number of the partition to delete. After deleting a partition, use the `p` command to
 verify that it actually is gone.
 
 ## Partition limitations
