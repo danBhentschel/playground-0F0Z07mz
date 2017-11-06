@@ -74,7 +74,7 @@ prompt to get a list of all possible partition types.
 
 Notice that each of the listed types has a GUID to the right of it. That's because in GPT, partition types are identified by a 128-bit value, rather than an
 8-bit value, as in MBR. The main advantage of this is that a new partition type identifier can be defined simpy by generating a new GUID, and it is statistically
-imporbable that the identifier will conflict with any previously existing identifier.
+improbable that the identifier will conflict with any previously existing identifier.
 
 There is a drawback to using GUIDs for partition types, though: they are a pain to type. And so `fdisk` provides an index to the left of each partition type.
 This is a more convenient way to identify partition types from the command line. Here are some of the more common Linux GPT partition types, and their `fdisk`
@@ -89,7 +89,7 @@ indices:
 
 Try changing the type of one of the partitions to `19`, Linux swap.
 
-> **NOTE:** The EFI System and BIOS boot partition types are used to store a bootloaders for UEFI or BIOS firmware. A discussion of bootloaders and
+> **NOTE:** The EFI System and BIOS boot partition types are used to store bootloaders for UEFI or BIOS firmware. A discussion of bootloaders and
 boot partitions is beyond the scope of this course.
 
 ## Partition names
