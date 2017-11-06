@@ -23,7 +23,7 @@ plan:
     - title: "GPT Partitions"
       statement: markdowns/02_lesson/04_gpt.md
     - title: "GPT Partitions With gdisk"
-      statement: markdowns/02_lesson/04_gdisk.md
+      statement: markdowns/02_lesson/05_gdisk.md
   - title: "Final Words"
     description: "Review and further study"
     plan:
